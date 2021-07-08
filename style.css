@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.nav-bar{
+    width:250px;
+    height:100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    z-index: 3;
+    background:#fc8ba0;
+    transition: 0.5s;
+}
+.nav-bar li {
+    list-style:none;
+    margin:28px 29px;
+    padding:5px;
+    border-radius: 3px;
+    
+}
+.nav-bar li:hover{
+    background:#f57088;
+    
+}
+.nav-bar li a{
+    text-decoration:none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.toggle-button img{
+    height:40px;
+    width:40px;
+    cursor: pointer;
+    border-radius: 3px;
+    
+    
+}
+.toggle-button img{
+
+    z-index: 3;
+    position:fixed;
+    right:31px;
+    top:18px;
+    
+}
+.header {
+  background-image: url("./images/background.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+@media only screen and (max-width:360px){
+    .header {
+       background: none;
+      }
+      .container-about h1{
+        font-size:2rem;
+    }
+    .image-container{
+        display:none;
+    }
+    .left-footer {
+     
+        margin:20px;
+        }
+}
+.container-header {
+  display: inline-block;
+  padding: 5px;
+  margin: 10px;
+  position: relative;
+  top: 26%;
+  left: 3%;
+  
+}
+
+.container-header .hi {
+  font-size: 4rem;
+  margin: 3px;
+  color: rgb(255, 166, 0);
+}
+.container-header .name {
+  font-size: 2.5rem;
+  margin: 3px;
+}
+.container-header .abhi {
+  color: blue;
+}
+.container-header .mern {
+  margin-top: 3rem;
+}
+.mern h3 {
+  font-size: 2rem;
+  color: rgb(247, 4, 186);
+}
+.button-group {
+  display: flex;
+  flex-direction: row;
+  margin-top: 31px;
+}
+.button-group a {
+  text-decoration: none;
+  padding: 16px;
+  margin: 7px;
+  border-radius: 3px;
+ 
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.button-group .contact {
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  color: white;
+}
+.button-group .resume {
+  border: 1px solid #2a2a72;
+  color:#2a2a72;
+}
+.button-group .resume:hover {
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    color: white;
+}
+.button-group .contact:hover {
+    border: 1px solid #2a2a72;
+    color:#2a2a72;
+    background:white;
+}
+.about{
+    width:90%;
+    margin:5px auto;
+    text-align: center;
+   
+}
+
+.container-about h1{
+    font-size:3rem;
+    border-bottom: 1px solid black;
+    margin-left: 30px;
+    padding:10px;
+    color:Blue;
+}
+.intro{
+    padding:30px;
+
+   font-size: 1.5rem;
+}
+.intro .motivation{
+  
+    margin: 30px 10px;
+    text-align:  center;
+    padding:5px;
+    color:blue;
+}
+.about .myimage {
+       width:24%;
+       display: block;
+       margin:10px auto;
+       height:257px;
+
+        
+    }
+.about .myimage  img{
+        width: 100%;
+        height:100%;
+        border-radius: 50%;
+        /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        
+    }
+.about span{
+    color: rgb(253, 15, 154);
+    font-size:1.6rem;
+}
+.about .insta-button {
+    display: flex;
+    justify-content: center;
+    text-align:  center;
+}
+.about .insta-button a {
+    width:170px;
+}
+.about .insta-button .github {
+    color:white;
+    
+}
+.about .insta-button .linkdin {
+    color:black;
+    
+}
+.about .insta-button i {
+    margin-left: 3px;
+    
+}
+.myskills{
+    width:90%;
+    margin:30px auto;
+}
+.skill-motivation{
+    text-align: center;
+    padding:5px;
+    color:blue;
+    margin-top: 2rem;
+    font-size:1.2rem;
+}
+.container-skills h1{
+    font-size:3rem;
+    border-bottom: 1px solid black;
+    margin-left: 30px;
+    padding:10px;
+    color:Blue;   
+}
+.image-skills{
+    margin-top:  50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer{
+background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+color:white;
+
+
+}
+footer .container{
+    display: flex;
+justify-content:space-around;
+padding:20px;
+flex-wrap: wrap;
+}
+ .left-footer li{
+list-style: none;
+padding:3px;
+margin:2px;
+}
+ .left-footer li i{
+padding:2px 20px;
+}
+ .icons-footer i{
+     padding:3px 9px;
+     margin:2px;
+     cursor: pointer;
+ }
+ .icons-footer a{
+    text-decoration: none;
+    color:white;
+ }
+ .copywright{
+     margin:5px;
+     padding:5px;
+     text-align:  center;
+    
+ }
+ .copywright p{
+    margin-bottom:20px;
+    
+ }
+ .follow-me h3{
+     margin: 3px;
+
+ }
+ .image-skills img{
+     height:60px;
+     width:60px;
+     margin: 3px;
+ }
